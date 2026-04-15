@@ -19,6 +19,9 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
+app.get("/",(req,res)=>{
+    res.send("server is Running Succussfully..")
+})
 app.use("/api/auth", authRoutes);
 app.use("/api/categories", categoryRoutes);
 app.use("/api/products", productRoutes);
