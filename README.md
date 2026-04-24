@@ -19,16 +19,16 @@ A modern, fully functional E-Commerce web application built using the **MERN** s
 *(Replace the placeholder URLs with the actual image links of your project after uploading them to GitHub or an image hosting service.)*
 
 ### 🏠 Homepage
-![Homepage Preview](put-your-homepage-image-url-here.png)
+![Homepage Preview](frontend/src/Images/Hero.png)
 
 ### 🛍️ Products Page
-![Products Page Preview](put-your-products-page-image-url-here.png)
+![Products Page Preview](frontend/src/Images/Products.png)
 
 ### 🛒 Cart Page
-![Cart Page Preview](put-your-cart-page-image-url-here.png)
+![Cart Page Preview](frontend/src/Images/Cart.png)
 
 ### 💳 Payment Page
-![Payment Page Preview](put-your-payment-page-image-url-here.png)
+![Payment Page Preview](frontend/src/Images/payment.png)
 
 ---
 
