@@ -18,7 +18,7 @@ function Register() {
       // Adjusted to standard auth register fields + role
       await authAPI.register({
         name,
-        email,
+        email: email.toLowerCase().trim(),
         password,
         role
       });

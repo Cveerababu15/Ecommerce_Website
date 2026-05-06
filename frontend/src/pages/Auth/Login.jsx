@@ -16,7 +16,7 @@ function Login() {
     setLoading(true);
     try {
       const res = await authAPI.login({
-        email,
+        email: email.toLowerCase().trim(),
         password
       });
 
