@@ -1,7 +1,16 @@
 import axios from "axios";
 
+function normalizeBaseUrl(raw) {
+  if (!raw) return "";
+  return raw.endsWith("/") ? raw.slice(0, -1) : raw;
+}
+
+// Vite env var. In production set this to your backend origin, e.g.
+// VITE_API_URL=https://ecommerce-website-8l7e.onrender.com
+const API_ORIGIN = normalizeBaseUrl(import.meta.env.VITE_API_URL);
+
 const API = axios.create({
-  baseURL: "http://localhost:5000/api"
+  baseURL: API_ORIGIN ? `${API_ORIGIN}/api` : "http://localhost:5000/api",
 });
 
 API.interceptors.request.use((req) => {

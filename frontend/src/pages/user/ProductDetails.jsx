@@ -52,7 +52,7 @@ function ProductDetails() {
       await cartAPI.addToCart(payload);
       fetchCartCount();
       toast.success(`${product.name} seamlessly added to cart!`);
-    } catch (error) {
+    } catch {
       toast.error("Please login to add to cart!");
     }
   };

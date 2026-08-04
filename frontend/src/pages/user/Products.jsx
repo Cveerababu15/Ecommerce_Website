@@ -82,7 +82,7 @@ function Products() {
       await cartAPI.addToCart({ productId: product._id, quantity: 1 });
       fetchCartCount();
       toast.success("Item beautifully added to your cart!");
-    } catch (error) {
+    } catch {
       toast.error("Please login to add to cart!");
     }
   };

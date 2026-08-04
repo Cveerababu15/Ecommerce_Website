@@ -22,12 +22,13 @@ function Login() {
 
       // save token & user role
       localStorage.setItem("token", res.data.token);
-      localStorage.setItem("role", res.data.user?.role || "user");
+      const role = (res.data.user?.role || "user").toString().toLowerCase().trim();
+      localStorage.setItem("role", role);
 
       toast.success("Login Successful");
 
       // redirect based on role
-      if (res.data.user?.role === "admin") {
+      if (role === "admin") {
         navigate("/admin");
       } else {
         navigate("/products");

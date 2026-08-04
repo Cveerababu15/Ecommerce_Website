@@ -7,7 +7,7 @@ function AdminRoute({ children }) {
     return <Navigate to="/login" />;
   }
 
-  const role = localStorage.getItem("role");
+  const role = (localStorage.getItem("role") || "").toString().toLowerCase().trim();
   const isAdmin = role === "admin";
 
   if (!isAdmin) {

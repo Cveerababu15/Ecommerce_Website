@@ -37,8 +37,8 @@ function Dashboard() {
           recentOrders: orders.slice(0, 4),
           loading: false
         });
-      } catch (error) {
-        console.error("Failed to load dashboard data");
+      } catch (err) {
+        console.error("Failed to load dashboard data", err);
         setData(prev => ({ ...prev, loading: false }));
       }
     };

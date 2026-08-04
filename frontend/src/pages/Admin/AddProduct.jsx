@@ -72,7 +72,7 @@ function AddProduct() {
       toast.success("Product successfully launched!");
       setForm({ name: "", price: "", category: "", subcategory: "", description: "", image: null, gender: "", sizes: [] });
       setPreview(null);
-    } catch (error) {
+    } catch {
       toast.error("Error adding product");
     } finally {
       setLoading(false);

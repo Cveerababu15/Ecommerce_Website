@@ -35,7 +35,7 @@ function Checkout() {
         toast.success("Payment Successful!");
         fetchCartCount();
         navigate("/orders");
-      } catch (err) {
+      } catch {
         toast.error("Verification Failed");
       }
 
